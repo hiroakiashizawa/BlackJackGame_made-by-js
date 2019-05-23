@@ -186,12 +186,15 @@ function doneReset () {
   window.location.reload();
 }
 
+function hiddenButton () {
+  stayB.className = 'active';
+  resetB.className = 'active';
+}
+
 function oneMorecard () {
   if (Count === 1) {
-    //スタイルが適用されていないので、させる。
-    stayB.style.visibility = 'visible'
-    resetB.style.visibility = 'visible'
-    }
+    hiddenButton();
+  }
   yname = document.getElementById('nmInput').value;
   gameCountMsg();
   DrawCard();
@@ -200,7 +203,6 @@ function oneMorecard () {
   dealersAction();
   burstCheck();
   totalJudge();
-  autoMove();
 }
 
 //処理
