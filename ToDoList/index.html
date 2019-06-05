@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <script src="js/action.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>To Do List for you</h1>
+  <div>
+    <input type='button' id='newTask' value='New Task'>
+    <input type='button' id='delTask' value='Delete'>
+    <input type='button' id='ediTask' value='Edit'>
+</div>
+  <ul id='task_list'>
+    <li><input type="checkbox" id='task0'>タスク</li>
+  </ul>
+
+
+    
+  <!-- レイヤー -->
+  <div id='layer'></div>
+
+  <!-- ポップアップ -->
+  <div id='popup'>
+
+    <!-- フォーム内容-->
+    <form name='main form' id='task_form'>
+      <article>タスク情報を入力してください</article>
+      <section>
+        <h5>
+          Task:
+          <input type='text' id='task_content' value='aaa'>
+        </h5>
+      </section>
+      <section>
+        <h5>
+          Task limit:
+          <input type='text' id='task_limit' value='bbb'>
+        </h5>
+      </section>
+      <input type='button' id='submit' value='submit'>
+      <input type='button' id='clear' value='clear'>
+    </form>
+    
+  </div>
+
+  <footer>
+    <p>Copyright ©️ 2019 H.Ashizawa All Right Reserved.</p>
+  </footer>
+</body>
+</html>

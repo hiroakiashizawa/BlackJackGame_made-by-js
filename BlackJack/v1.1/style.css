@@ -1,0 +1,31 @@
+section {
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 1em;
+}
+
+input#nmInput {
+  width: 200px;
+}
+
+label {
+  /* すべてのラベルを同じサイズにして、きちんと揃える */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+.active {
+  visibility: visible;
+}
+
+.passive {
+  visibility: hidden;
+}

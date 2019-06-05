@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang='ja'>
+  <head>
+    <meta charset='utf-8'>
+    <title>ブラックジャックゲーム</title>
+
+    <link href='style.css' rel='stylesheet'>
+  </head>
+  <body>
+    <form action="send-page" method="post">
+      <div>
+        <label for="name">Name: </label>
+        <input type='text' id='nmInput' name='user-name' autocomplete="off">
+      </div>
+    </form>
+    <section>
+      <button id='submit'>Start</button>
+      <button id='stay' class='passive'>Stay</button>
+      <button id='reset' class='passive'>Reset</button>
+    </section>
+    <section>
+      <div id='welcmMsg'></div>
+      <div id='createMsg'></div>
+      <p id='start-messages'></p>
+      <p id='game'></p>
+      <p id='finish-messages'></p>
+    </section>
+      
+    </div>
+
+    <script src='bl.js'></script>
+  </body>        
+</html>
+ 
